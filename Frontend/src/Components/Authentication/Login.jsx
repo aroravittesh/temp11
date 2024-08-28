@@ -19,7 +19,7 @@ const Login = () => {
       <div className="forgot-password">
         forgot password? <span>Click here</span>
       </div>
-
+      <div className="forgot-password1">Haven't Signed Up Yet? <a href="/signup">Sign Up</a></div>
       <div className="submit-container">
         <div
           className="submit"

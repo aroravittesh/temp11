@@ -11,7 +11,7 @@ const Homepage = () => {
   return (
     <div>
       <div className="text">
-        <span className="typing-text">Welcome to EnviroMine</span>
+        <span className="typing-text">Welcome to CARBONMITRA</span>
         <h1 style={{ padding: "1.5rem" }}>
           Your Ultimate Guide to Sustainable Living and Environmental Awareness
         </h1>
@@ -25,6 +25,24 @@ const Homepage = () => {
           Learn More
         </button>
       </div>
+      <br></br>
+      <br></br>
+      <div class="container">
+    <div class="left">
+        <h1>DISCOVER</h1>
+    </div>
+
+    <div class="middle">
+        <h1>OUR</h1>
+        <h2>IMPACT</h2>
+        
+        <button class="explore-btn">Explore</button>
+    </div>
+
+    <div class="right"><h2>Empowering Coal Mines</h2></div>
+</div>
+
+<div class="right"></div> 
       <Card />
       <Whyus />
       <Whatwedo />

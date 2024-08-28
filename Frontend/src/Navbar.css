@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     background-color: #A5DD9B;
     position: sticky;
     width: 100%;
@@ -81,4 +81,69 @@
   }
   
   
+   */
+
+   .navbar {
+    background-color: #393b39;
+    position: sticky;
+    top: 0;
+    width: 97.5%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+  }
   
+  .title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color:Black;
+  }
+  
+  .logo {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  
+  .links {
+    display: flex;
+    gap: 20px; /* Space between each link */
+  }
+  
+  .links a {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    padding: 0 10px;
+  }
+  
+  .links a:hover {
+    color: #727272; /* Change color on hover */
+  }
+  
+  .authenticate {
+    padding: 0 10px;
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    color: #434343;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .authenticate:hover {
+    /* background-color: #004400; */
+    color: white;
+  }
+  
+h2{
+  font:normal normal bold 20px / 1.4em fahkwang, sans-serif;
+}

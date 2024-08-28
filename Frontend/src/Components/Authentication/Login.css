@@ -86,6 +86,24 @@
   cursor: pointer;
 }
 
+.forgot-password1 {
+  padding-left: 62px;
+  margin-top: 27px;
+  color: #797979;
+  font-size: 18px;
+}
+
+.forgot-password1 span {
+  color: #7a9956;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.forgot-password1 a{
+  color: #7a9956;
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   .Login-container {
     width: 80%;
@@ -109,6 +127,11 @@
   }
 
   .forgot-password {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .forgot-password1 {
     margin-top: 20px;
     font-size: 16px;
   }

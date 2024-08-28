@@ -1,136 +1,191 @@
 .text {
-    text-align: center;
-    margin-top: 3rem;
-  }
-  
-  .text h1 {
-    font-weight: 400;
-  }
-  
-  .typing-text {
-    display: inline-block;
-    border-right: 2px solid;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 2.5s steps(20) infinite, cursor 1s step-end infinite;
-    font-size: 2.3rem;
-    font-weight: 600;
-    color: #90D26D;
-  }
-  
-  /* Typing effect */
-  @keyframes typing {
-    from {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.text h1 {
+  font-weight: 400;
+}
+
+.typing-text {
+  display: inline-block;
+  /* border-right: 2px solid #333;  */
+  white-space: nowrap;
+  overflow: hidden;
+  /* animation: typing 2.5s steps(20) infinite, cursor 1s step-end infinite; */
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #B0B0B0; /* Changed to a lighter coal color */
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
       width: 0;
-    }
-    to {
+  }
+  to {
       width: 23ch;
-    }
   }
-  
-  /* Blinking cursor effect */
-  @keyframes cursor {
-    from,
-    to {
+}
+
+/* Blinking cursor effect */
+@keyframes cursor {
+  from,
+  to {
       border-color: transparent;
-    }
-    50% {
-      border-color: black;
-    }
   }
-  
-  .getting-started {
-    text-align: center;
-    margin-top: 2.5rem;
+  50% {
+      border-color: #333; 
   }
-  
-  .start-btn {
-    width: 8.5rem;
-    height: 3rem;
-    border-radius: 5px;
-    font-size: large;
-    font-weight: 500;
-    border: none;
-    background-color: #86d75a;
-    transition: box-shadow 0.2s ease;
-    cursor: pointer;
-  }
-  
-  .about-btn {
-    width: 7rem;
-    height: 3rem;
-    border-radius: 5px;
-    font-size: large;
-    font-weight: 500;
-    border: none;
-    background-color: #94d670;
-    transition: box-shadow 0.2s ease;
-    cursor: pointer;
-  }
-  
-  .start-btn:hover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  .about-btn:hover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  @media screen and (max-width: 1100px) {
-    .text {
+}
+
+.getting-started {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.start-btn {
+  width: 8.5rem;
+  height: 3rem;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 500;
+  border: none;
+  background-color: #444; /* Dark coal color */
+  color: #FFFFFF; /* White text for contrast */
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.about-btn {
+  width: 7rem;
+  height: 3rem;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 500;
+  border: none;
+  background-color: #555; /* Slightly lighter coal color */
+  color: #FFFFFF; /* White text for contrast */
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+.about-btn:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+.container {
+  display: flex; /* Flexbox for this specific section */
+  height: 100vh; /* Adjust as needed */
+}
+.left {
+  flex: 2; /* 2 parts */
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-right: 2px solid white; /* Right border */
+}
+.middle {
+  flex: 1; /* 1 part */
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-right: 2px solid white; /* Right border */
+}
+.right {
+  flex: 1; /* 1 part */
+  /* background: url('https://d41chssnpqdne.cloudfront.net/user_upload_by_module/chat_bot/files/9983168/rDkzeGNCXIupkKPW.png?Expires=1726058203&Signature=u9vvo-i-sCJw4a6y41TmJP9ebmcdwUGXnV9A~fxhz2MRur-p2RPg99NkazTJLGnv0r9fgFLk4vzIljefyTcDA8FsmIYR7iIxONfQwjL9CqlPRvLK0UutsjsVBlyTJkN2Jxqg8RKTj2ZPwHuxehcqv-6paExK7bdtf3VdJNW-syZrUq2Hdn0~rCCTf-og-dxZgYn5YZB2-xk-2gmRgFmpqkRiI604u95vp3UHBl~gzl4KiXHi6c0fjJ68XtVPlE8x~wQTIWuOWJrOEGDaTU4sybUserkYMryvsJjdukgmp8fq5YPSnOKPNX-Ue5arLc6Pquz8HoucnwOHA8UpaCyNbg__&Key-Pair-Id=K3USGZIKWMDCSXwrie) no-repeat center center; */
+  background-size: cover;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-right: 2px solid white; 
+}
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+.explore-btn {
+  background-color: #D3C0D2; /* Light purple */
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .text {
       font-size: 0.8rem;
-    }
   }
-  
-  @media screen and (max-width: 885px) {
-    .text {
+}
+
+@media screen and (max-width: 885px) {
+  .text {
       font-size: 0.7rem;
-    }
-    .typing-text {
+  }
+  .typing-text {
       font-size: 2rem;
-    }
-    .about-btn {
+  }
+  .about-btn {
       width: 6rem;
       height: 3rem;
       font-size: medium;
-    }
   }
-  
-  @media screen and (max-width: 767px) {
-    .text {
+}
+
+@media screen and (max-width: 767px) {
+  .text {
       font-size: 0.6rem;
-    }
-    .typing-text {
+  }
+  .typing-text {
       font-size: 1.6rem;
-    }
-    .start-btn {
+  }
+  .start-btn {
       width: 6.5rem;
       height: 3rem;
       font-size: 14px;
-    }
-    .about-btn {
+  }
+  .about-btn {
       width: 6rem;
       height: 3rem;
       font-size: 14px;
-    }
   }
-  
-  @media screen and (max-width: 420px) {
-    .text {
+}
+
+@media screen and (max-width: 420px) {
+  .text {
       font-size: 0.4rem;
-    }
-    .typing-text {
+  }
+  .typing-text {
       font-size: 1.5rem;
-    }
-    .start-btn {
+  }
+  .start-btn {
       width: 6rem;
       height: 2.5rem;
       font-size: 12px;
-    }
-    .about-btn {
+  }
+  .about-btn {
       width: 5rem;
       height: 2.5rem;
       font-size: 12px;
-    }
   }
-  
+}
